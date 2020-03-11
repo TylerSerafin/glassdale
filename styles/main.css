@@ -17,3 +17,17 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
+
+.criminalstyle {
+	border: 2px solid black;
+	margin: 2rem;
+	margin-bottom: -.5rem;
+	width: 250px;
+}
+
+.criminalsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
