@@ -1,11 +1,9 @@
-import { getOfficers } from "./officers/OfficerProvider.js"
-import { getCriminals } from "./criminals/criminalprovider.js"
-import { CriminalList } from "./criminals/criminalList.js"
+import { getCriminals } from "./criminals/CriminalProvider.js"
+import { CriminalList } from "./criminals/CriminalList.js"
+import { getConvictions } from "./convictions/ConvictionProvider.js"
+import ConvictionSelect from "./convictions/ConvictionSelect.js"
 
-console.log("Welcome to the main module")
+getCriminals().then(CriminalList)
 
-getOfficers()
-
-getCriminals().then(
-CriminalList
-)
+// first get all convictions, THEN create the conviction dropdown
+getConvictions().then(ConvictionSelect)
